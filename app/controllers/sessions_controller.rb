@@ -16,7 +16,9 @@ class SessionsController < ApplicationController
       if session[:name] == nil
 
       else
-          session.destroy :name
+          binding.pry
+        #   session.destroy :name
       end
   end
+  
 end

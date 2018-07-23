@@ -12,12 +12,12 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-      binding.pry
       if session[:name] == nil
-
+          redirect_to '/'
       else
-          binding.pry
-        #   session.destroy :name
+          session.destroy :name
+        redirect_to '/'
+        
       end
   end
 

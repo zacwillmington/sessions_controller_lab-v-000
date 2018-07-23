@@ -20,5 +20,5 @@ class SessionsController < ApplicationController
         #   session.destroy :name
       end
   end
-  
+
 end

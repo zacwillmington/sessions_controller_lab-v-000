@@ -4,10 +4,8 @@ class SessionsController < ApplicationController
 
   def create
       binding.pry
-      if params.include?(:name) && params[:name] == session[:name]
-          binding.pry
-          redirect_to '/'
-      elsif params.include?(:name) && params[:name] != ''
+      
+      if params.include?(:name) && params[:name] != ''
           binding.pry
             session[:name] = params[:name]
             redirect_to '/'

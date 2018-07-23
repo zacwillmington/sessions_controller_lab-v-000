@@ -17,7 +17,7 @@ class SessionsController < ApplicationController
       else
           session.destroy :name
         redirect_to '/'
-        
+
       end
   end
 

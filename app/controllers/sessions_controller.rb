@@ -13,5 +13,9 @@ class SessionsController < ApplicationController
 
   def destroy
       binding.pry
+      if session[:name] == nil
+      else
+          session.clear
+      end
   end
 end
